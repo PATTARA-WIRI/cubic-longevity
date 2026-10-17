@@ -167,8 +167,8 @@ export default function Home() {
 
       <section className="mx-auto w-full max-w-3xl px-5 py-20">
         <p className="label mb-3 text-center">Medical Director</p>
-        <h2 className="mb-2 text-center text-h2 font-bold">Dr. Jutos Jakkaichawadol</h2>
-        <p className="mb-10 text-center text-muted">Longevity Physician · CUBIC</p>
+        <h2 className="mb-2 text-center text-h2 font-bold">PATTARA WIRIYABANDITKUL, M.D.</h2>
+        <p className="mb-10 text-center text-muted">Medical Director · CUBIC Longevity</p>
         <h3 className="mb-6 text-center text-xl font-semibold">คำถามที่พบบ่อย</h3>
         <div className="space-y-3">
           {faqs.map((f) => (
