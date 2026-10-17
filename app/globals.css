@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
+/* CUBIC CI: raw concrete, black & white, warm timber as the thread, colour through light */
 :root {
-  --background: #fbf6ee;
-  --foreground: #2b2118;
-  --muted: #6e5f52;
-  --surface: #ffffff;
-  --line: #eadfce;
-  --primary: #c8643c;
-  --primary-dark: #a64d2b;
-  --accent-soft: #f6e4d4;
-  --dark: #241a13;
+  --background: #0e0e0f;
+  --foreground: #ededea;
+  --muted: #9a9a96;
+  --surface: #17171a;
+  --surface-light: #e9e7e2;
+  --ink: #141414;
+  --line: #2a2a2d;
+  --primary: #c98b4f;
+  --primary-soft: #e2b98a;
+  --cool: #7f95a8;
   --line-green: #06c755;
 }
 
@@ -18,17 +20,19 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
+  --color-ink: var(--ink);
   --color-line: var(--line);
   --color-primary: var(--primary);
-  --color-primary-dark: var(--primary-dark);
-  --color-accent-soft: var(--accent-soft);
-  --color-dark: var(--dark);
+  --color-primary-soft: var(--primary-soft);
+  --color-cool: var(--cool);
   --color-line-green: var(--line-green);
   --font-sans: var(--font-thai);
   --text-body: 1.0625rem;
   --text-small: 0.9375rem;
-  --text-h2: 1.75rem;
-  --text-h1: 2.25rem;
+  --text-label: 0.75rem;
+  --text-h2: 1.875rem;
+  --text-h1: 2.5rem;
 }
 
 html {
@@ -41,4 +45,18 @@ body {
   font-family: var(--font-thai), sans-serif;
   font-size: var(--text-body);
   line-height: 1.7;
+}
+
+.label {
+  font-size: var(--text-label);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/* soft light falling on a raw concrete wall */
+.glow {
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 0%, rgba(201, 139, 79, 0.22), transparent 70%),
+    var(--background);
 }
